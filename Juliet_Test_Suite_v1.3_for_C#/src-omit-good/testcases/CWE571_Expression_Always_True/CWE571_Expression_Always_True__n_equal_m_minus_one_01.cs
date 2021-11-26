@@ -1,0 +1,30 @@
+﻿/*
+ * @description statement always evaluates to true
+ * 
+ * */
+
+using System;
+using TestCaseSupport;
+
+namespace testcases.CWE571_Expression_Always_True
+{
+    class CWE571_Expression_Always_True__n_equal_m_minus_one_01 : AbstractTestCase
+    {
+#if (!OMITBAD)
+        public override void Bad()
+        {
+            /* FLAW: always evaluates to true */
+            int intThirty = 30;
+            int intThirtyOne = 31;
+
+            if (intThirty == (intThirtyOne - 1))
+            {
+                IO.WriteLine("always prints");
+            }
+        }
+#endif // OMITBAD
+
+
+
+}
+}

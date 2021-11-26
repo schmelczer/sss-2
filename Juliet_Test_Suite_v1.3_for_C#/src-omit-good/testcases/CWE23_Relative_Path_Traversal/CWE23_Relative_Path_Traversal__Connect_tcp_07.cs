@@ -1,0 +1,105 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE23_Relative_Path_Traversal__Connect_tcp_07.cs
+Label Definition File: CWE23_Relative_Path_Traversal.label.xml
+Template File: sources-sink-07.tmpl.cs
+*/
+/*
+* @description
+* CWE: 23 Relative Path Traversal
+* BadSource: Connect_tcp Read data using an outbound tcp connection
+* GoodSource: A hardcoded string
+* BadSink: readFile no validation
+* Flow Variant: 07 Control flow: if(privateFive==5) and if(privateFive!=5)
+*
+* */
+
+using TestCaseSupport;
+using System;
+
+using System.IO;
+
+using System.Web;
+
+using System.Net.Sockets;
+
+namespace testcases.CWE23_Relative_Path_Traversal
+{
+
+class CWE23_Relative_Path_Traversal__Connect_tcp_07 : AbstractTestCase
+{
+
+    /* The variable below is not declared "readonly", but is never assigned
+     * any other value so a tool should be able to identify that reads of
+     * this will always give its initialized value.
+     */
+    private int privateFive = 5;
+#if (!OMITBAD)
+    /* uses badsource and badsink */
+    public override void Bad()
+    {
+        string data;
+        if (privateFive == 5)
+        {
+            data = ""; /* Initialize data */
+            /* Read data using an outbound tcp connection */
+            {
+                try
+                {
+                    /* Read data using an outbound tcp connection */
+                    using (TcpClient tcpConn = new TcpClient("host.example.org", 39544))
+                    {
+                        /* read input from socket */
+                        using (StreamReader sr = new StreamReader(tcpConn.GetStream()))
+                        {
+                            /* POTENTIAL FLAW: Read data using an outbound tcp connection */
+                            data = sr.ReadLine();
+                        }
+                    }
+                }
+                catch (IOException exceptIO)
+                {
+                    IO.Logger.Log(NLog.LogLevel.Warn, exceptIO, "Error with stream reading");
+                }
+            }
+        }
+        else
+        {
+            /* INCIDENTAL: CWE 561 Dead Code, the code below will never run
+             * but ensure data is inititialized before the Sink to avoid compiler errors */
+            data = null;
+        }
+        int p = (int)Environment.OSVersion.Platform;
+        string root;
+        if (p == (int)PlatformID.Win32NT || p == (int)PlatformID.Win32Windows || p == (int)PlatformID.Win32S || p == (int)PlatformID.WinCE)
+        {
+            /* running on Windows */
+            root = "C:\\uploads\\";
+        }
+        else
+        {
+            /* running on non-Windows */
+            root = "/home/user/uploads/";
+        }
+        if (data != null)
+        {
+            /* POTENTIAL FLAW: no validation of concatenated value */
+            if (File.Exists(root + data))
+            {
+                try
+                {
+                    using (StreamReader sr = new StreamReader(root + data))
+                    {
+                        IO.WriteLine(sr.ReadLine());
+                    }
+                }
+                catch (IOException exceptIO)
+                {
+                    IO.Logger.Log(NLog.LogLevel.Warn, exceptIO, "Error with stream reading");
+                }
+            }
+        }
+    }
+#endif //omitbad
+
+}
+}

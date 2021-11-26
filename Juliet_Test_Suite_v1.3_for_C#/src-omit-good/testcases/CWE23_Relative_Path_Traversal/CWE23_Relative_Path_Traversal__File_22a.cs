@@ -1,0 +1,76 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE23_Relative_Path_Traversal__File_22a.cs
+Label Definition File: CWE23_Relative_Path_Traversal.label.xml
+Template File: sources-sink-22a.tmpl.cs
+*/
+/*
+ * @description
+ * CWE: 23 Relative Path Traversal
+ * BadSource: File Read data from file (named data.txt)
+ * GoodSource: A hardcoded string
+ * Sinks: readFile
+ *    BadSink : no validation
+ * Flow Variant: 22 Control flow: Flow controlled by value of a public static variable. Sink functions are in a separate file from sources.
+ *
+ * */
+
+using TestCaseSupport;
+using System;
+
+using System.IO;
+
+using System.Web;
+
+namespace testcases.CWE23_Relative_Path_Traversal
+{
+class CWE23_Relative_Path_Traversal__File_22a : AbstractTestCase
+{
+
+    /* The public static variable below is used to drive control flow in the source function.
+     * The public static variable mimics a global variable in the C/C++ language family. */
+    public static bool badPublicStatic = false;
+#if (!OMITBAD)
+    public override void Bad()
+    {
+        string data;
+        badPublicStatic = true;
+        data = CWE23_Relative_Path_Traversal__File_22b.BadSource();
+        int p = (int)Environment.OSVersion.Platform;
+        string root;
+        if (p == (int)PlatformID.Win32NT || p == (int)PlatformID.Win32Windows || p == (int)PlatformID.Win32S || p == (int)PlatformID.WinCE)
+        {
+            /* running on Windows */
+            root = "C:\\uploads\\";
+        }
+        else
+        {
+            /* running on non-Windows */
+            root = "/home/user/uploads/";
+        }
+        if (data != null)
+        {
+            /* POTENTIAL FLAW: no validation of concatenated value */
+            if (File.Exists(root + data))
+            {
+                try
+                {
+                    using (StreamReader sr = new StreamReader(root + data))
+                    {
+                        IO.WriteLine(sr.ReadLine());
+                    }
+                }
+                catch (IOException exceptIO)
+                {
+                    IO.Logger.Log(NLog.LogLevel.Warn, exceptIO, "Error with stream reading");
+                }
+            }
+        }
+    }
+#endif //omitbad
+    /* The public static variables below are used to drive control flow in the source functions.
+     * The public static variable mimics a global variable in the C/C++ language family. */
+    public static bool goodG2B1PublicStatic = false;
+    public static bool GoodG2B2PublicStatic = false;
+
+}
+}

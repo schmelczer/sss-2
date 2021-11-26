@@ -1,0 +1,87 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE606_Unchecked_Loop_Condition__Connect_tcp_10.cs
+Label Definition File: CWE606_Unchecked_Loop_Condition.label.xml
+Template File: sources-sinks-10.tmpl.cs
+*/
+/*
+* @description
+* CWE: 606 Unchecked Input for Loop Condition
+* BadSource: Connect_tcp Read data using an outbound tcp connection
+* GoodSource: hardcoded int in string form
+* Sinks:
+*    GoodSink: validate loop variable
+*    BadSink : loop variable not validated
+* Flow Variant: 10 Control flow: if(IO.staticTrue) and if(IO.staticFalse)
+*
+* */
+
+using TestCaseSupport;
+using System;
+
+using System.Web;
+
+using System.IO;
+using System.Net.Sockets;
+
+namespace testcases.CWE606_Unchecked_Loop_Condition
+{
+class CWE606_Unchecked_Loop_Condition__Connect_tcp_10 : AbstractTestCase
+{
+#if (!OMITBAD)
+    public override void Bad()
+    {
+        string data;
+        if (IO.staticTrue)
+        {
+            data = ""; /* Initialize data */
+            /* Read data using an outbound tcp connection */
+            {
+                try
+                {
+                    /* Read data using an outbound tcp connection */
+                    using (TcpClient tcpConn = new TcpClient("host.example.org", 39544))
+                    {
+                        /* read input from socket */
+                        using (StreamReader sr = new StreamReader(tcpConn.GetStream()))
+                        {
+                            /* POTENTIAL FLAW: Read data using an outbound tcp connection */
+                            data = sr.ReadLine();
+                        }
+                    }
+                }
+                catch (IOException exceptIO)
+                {
+                    IO.Logger.Log(NLog.LogLevel.Warn, exceptIO, "Error with stream reading");
+                }
+            }
+        }
+        else
+        {
+            /* INCIDENTAL: CWE 561 Dead Code, the code below will never run
+             * but ensure data is inititialized before the Sink to avoid compiler errors */
+            data = null;
+        }
+        if (IO.staticTrue)
+        {
+            int numberOfLoops;
+            try
+            {
+                numberOfLoops = int.Parse(data);
+            }
+            catch (FormatException exceptNumberFormat)
+            {
+                IO.WriteLine("Invalid response. Numeric input expected. Assuming 1.");
+                IO.Logger.Log(NLog.LogLevel.Warn, exceptNumberFormat, "Invalid response. Numeric input expected. Assuming 1.");
+                numberOfLoops = 1;
+            }
+            for (int i = 0; i < numberOfLoops; i++)
+            {
+                /* POTENTIAL FLAW: user supplied input used for loop counter test */
+                IO.WriteLine("hello world");
+            }
+        }
+    }
+#endif //omitbad
+
+}
+}

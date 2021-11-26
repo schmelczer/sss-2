@@ -1,0 +1,38 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE197_Numeric_Truncation_Error__float_large_to_short_66a.cs
+Label Definition File: CWE197_Numeric_Truncation_Error__float.label.xml
+Template File: sources-sink-66a.tmpl.cs
+*/
+/*
+ * @description
+ * CWE: 197 Numeric Truncation Error
+ * BadSource: large Set data to a number larger than long.MaxValue
+ * GoodSource: A hardcoded non-zero, non-min, non-max, even number
+ * Sinks: to_short
+ *    BadSink : Convert data to a short
+ * Flow Variant: 66 Data flow: data passed in an array from one method to another in different source files in the same package
+ *
+ * */
+
+using TestCaseSupport;
+using System;
+
+namespace testcases.CWE197_Numeric_Truncation_Error
+{
+
+class CWE197_Numeric_Truncation_Error__float_large_to_short_66a : AbstractTestCase
+{
+#if (!OMITBAD)
+    public override  void Bad()
+    {
+        float data;
+        /* FLAW: Use a number larger than short.MaxValue */
+        data = long.MaxValue + 5f;
+        float[] dataArray = new float[5];
+        dataArray[2] = data;
+        CWE197_Numeric_Truncation_Error__float_large_to_short_66b.BadSink(dataArray  );
+    }
+#endif //omitbad
+
+}
+}

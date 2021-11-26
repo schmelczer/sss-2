@@ -1,0 +1,91 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE129_Improper_Validation_of_Array_Index__File_array_size_03.cs
+Label Definition File: CWE129_Improper_Validation_of_Array_Index.label.xml
+Template File: sources-sinks-03.tmpl.cs
+*/
+/*
+* @description
+* CWE: 129 Improper Validation of Array Index
+* BadSource: File Read data from file (named c:\data.txt)
+* GoodSource: A hardcoded non-zero, non-min, non-max, even number
+* Sinks: array_size
+*    GoodSink: data is used to set the size of the array and it must be greater than 0
+*    BadSink : data is used to set the size of the array, but it could be set to 0
+* Flow Variant: 03 Control flow: if(5==5) and if(5!=5)
+*
+* */
+
+using TestCaseSupport;
+using System;
+
+using System.Web;
+
+using System.IO;
+
+namespace testcases.CWE129_Improper_Validation_of_Array_Index
+{
+class CWE129_Improper_Validation_of_Array_Index__File_array_size_03 : AbstractTestCase
+{
+#if (!OMITBAD)
+    public override void Bad()
+    {
+        int data;
+        if (5==5)
+        {
+            data = int.MinValue; /* Initialize data */
+            {
+                try
+                {
+                    /* read string from file into data */
+                    using (StreamReader sr = new StreamReader("data.txt"))
+                    {
+                        /* POTENTIAL FLAW: Read data from a file */
+                        /* This will be reading the first "line" of the file, which
+                         * could be very long if there are little or no newlines in the file */
+                        string stringNumber = sr.ReadLine();
+                        if (stringNumber != null) /* avoid NPD incidental warnings */
+                        {
+                            try
+                            {
+                                data = int.Parse(stringNumber.Trim());
+                            }
+                            catch (FormatException exceptNumberFormat)
+                            {
+                                IO.Logger.Log(NLog.LogLevel.Warn, exceptNumberFormat, "Number format exception parsing data from string");
+                            }
+                        }
+                    }
+                }
+                catch (IOException exceptIO)
+                {
+                    IO.Logger.Log(NLog.LogLevel.Warn, exceptIO, "Error with stream reading");
+                }
+            }
+        }
+        else
+        {
+            /* INCIDENTAL: CWE 561 Dead Code, the code below will never run
+             * but ensure data is inititialized before the Sink to avoid compiler errors */
+            data = 0;
+        }
+        if (5==5)
+        {
+            int[] array = null;
+            /* POTENTIAL FLAW: Verify that data is non-negative, but still allow it to be 0 */
+            if (data >= 0)
+            {
+                array = new int[data];
+            }
+            else
+            {
+                IO.WriteLine("Array size is negative");
+            }
+            /* do something with the array */
+            array[0] = 5;
+            IO.WriteLine(array[0]);
+        }
+    }
+#endif //omitbad
+
+}
+}
