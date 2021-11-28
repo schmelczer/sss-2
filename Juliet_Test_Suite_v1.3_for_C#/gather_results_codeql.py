@@ -61,7 +61,7 @@ def get_covered_file_counts(root: Path, results: List[Tuple[str, str, str, str]]
     omit_good_files = [f.name for f in (root / 'testcases').glob('**/*.cs') if has_omit_good_bad(f)[0]]
     omit_bad_files = [f.name for f in (root / 'testcases').glob('**/*.cs') if has_omit_good_bad(f)[1]]
     
-    covered_with_error = {f.split('/')[-1] for s, n, d, f in results if s == 'error'}
+    covered_with_error = {f.split('/')[-1] for s, n, d, f in results if s == 'error' and n != 'Container contents are never accessed'}
     covered_with_anything = {f.split('/')[-1] for s, n, d, f in results}
     return {
         'omit_good_files': {
