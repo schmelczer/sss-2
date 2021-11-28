@@ -1,0 +1,3 @@
+"Redundant ToString() call","Explicit calls to `ToString()` can be removed when the call appears in a context where an implicit conversion exists.","recommendation","Redundant call to 'ToString'.","/CWE582_Array_Public_Readonly_Static__basic_01_bad.cs","19","45","19","117"
+"Redundant ToString() call","Explicit calls to `ToString()` can be removed when the call appears in a context where an implicit conversion exists.","recommendation","Redundant call to 'ToString'.","/CWE582_Array_Public_Readonly_Static__basic_01_bad.cs","21","45","21","117"
+"Generic catch clause","Catching all exceptions with a generic catch clause may be overly broad, which can make errors harder to diagnose.","recommendation","Generic catch clause.","/Program.cs","50","8","55","6"

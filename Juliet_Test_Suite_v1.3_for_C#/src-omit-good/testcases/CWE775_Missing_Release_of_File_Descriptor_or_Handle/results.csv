@@ -1,0 +1,2 @@
+"Missing Dispose call on local IDisposable","Methods that create objects of type 'IDisposable' should call 'Dispose' on those objects, otherwise unmanaged resources may not be released.","warning","Disposable 'StreamReader' is created here but is not disposed.","/CWE775_Missing_Release_of_File_Descriptor_or_Handle__StreamReader_01.cs","20","22","20","53"
+"Generic catch clause","Catching all exceptions with a generic catch clause may be overly broad, which can make errors harder to diagnose.","recommendation","Generic catch clause.","/Program.cs","50","8","55","6"
