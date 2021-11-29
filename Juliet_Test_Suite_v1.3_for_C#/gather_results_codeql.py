@@ -4,9 +4,11 @@ from collections import Counter
 from pathlib import Path
 from typing import List, Tuple, Dict
 import logging
+import sys
 
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
+logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
 
 def evaluate_results(root: Path):
@@ -95,6 +97,8 @@ if __name__ == '__main__':
 
     real_positives = omit_good_evaluations['covered_counts']['omit_bad_files']['all']
     real_negatives = omit_bad_evaluations['covered_counts']['omit_good_files']['all']
+
+    logging.debug(f"{real_positives} real positives, {real_negatives} real negatives")
 
     true_positives_errors = omit_good_evaluations['covered_counts']['omit_bad_files']['covered_with_error']
     false_negatives_errors = real_positives - true_positives_errors
