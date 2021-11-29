@@ -61,7 +61,3 @@ Since GitHUB acquiring LGTM, a streamlined integration is available to create a 
 | Precision (with warnings) |   0.50 |           |      |
 | Recall (with warnings)    |   0.43 |           |      |
 | F1 (with warnings)        |   0.46 |           |      |
-
-###
-
-###
