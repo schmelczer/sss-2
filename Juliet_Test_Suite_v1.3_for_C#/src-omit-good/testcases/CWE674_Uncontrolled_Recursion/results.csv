@@ -1,0 +1,2 @@
+"Generic catch clause","Catching all exceptions with a generic catch clause may be overly broad, which can make errors harder to diagnose.","recommendation","Generic catch clause.","/Program.cs","50","8","55","6"
+"Compilation message","A message emitted by the compiler, including warnings and errors.","recommendation","Warning CS0414 The field 'CWE674_Uncontrolled_Recursion__long_01.RECURSION_LONG_MAX' is assigned but its value is never used","/CWE674_Uncontrolled_Recursion__long_01.cs","13","38","13","55"
