@@ -10,6 +10,14 @@ System & Software Security 2021, 2nd assignment
 
 > Aug 2020, NSA Center for Assured Software, 28942 cases
 
+### Number of C# lines
+
+```sh
+(find src-omit-good/ -name '*.cs' -print0 | xargs -0 cat) | wc -l
+```
+
+> 6424414
+
 ### Paths
 
 - [Original source](Juliet_Test_Suite_v1.3_for_C#/src)
