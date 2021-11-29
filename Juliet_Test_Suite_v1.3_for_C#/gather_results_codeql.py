@@ -18,7 +18,6 @@ def evaluate_results(root: Path):
     evaluated = {
         "path": str(root),
         "found": counters,
-        "file_count": all,
         "covered_counts": covered_counts
     }
     logging.info(pformat(evaluated))
