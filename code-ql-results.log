@@ -1,0 +1,353 @@
+reading (0): src-omit-good/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/results.csv
+reading (1): src-omit-good/testcases/CWE338_Weak_PRNG/results.csv
+reading (2): src-omit-good/testcases/CWE833_Deadlock/results.csv
+reading (3): src-omit-good/testcases/CWE83_XSS_Attribute/results.csv
+reading (4): src-omit-good/testcases/CWE190_Integer_Overflow/s05/results.csv
+reading (5): src-omit-good/testcases/CWE190_Integer_Overflow/s02/results.csv
+reading (6): src-omit-good/testcases/CWE190_Integer_Overflow/s03/results.csv
+reading (7): src-omit-good/testcases/CWE190_Integer_Overflow/s04/results.csv
+reading (8): src-omit-good/testcases/CWE190_Integer_Overflow/s01/results.csv
+reading (9): src-omit-good/testcases/CWE190_Integer_Overflow/s06/results.csv
+reading (10): src-omit-good/testcases/CWE190_Integer_Overflow/s07/results.csv
+reading (11): src-omit-good/testcases/CWE134_Externally_Controlled_Format_String/results.csv
+reading (12): src-omit-good/testcases/CWE398_Code_Quality/results.csv
+reading (13): src-omit-good/testcases/CWE506_Embedded_Malicious_Code/results.csv
+reading (14): src-omit-good/testcases/CWE81_XSS_Error_Message/results.csv
+reading (15): src-omit-good/testcases/CWE366_Race_Condition_within_a_Thread/results.csv
+reading (16): src-omit-good/testcases/CWE667_Improper_Locking/results.csv
+reading (17): src-omit-good/testcases/CWE379_Temporary_File_Creation_in_Insecure_Dir/results.csv
+reading (18): src-omit-good/testcases/CWE459_Incomplete_Cleanup/results.csv
+reading (19): src-omit-good/testcases/CWE259_Hard_Coded_Password/results.csv
+reading (20): src-omit-good/testcases/CWE369_Divide_by_Zero/s02/results.csv
+reading (21): src-omit-good/testcases/CWE369_Divide_by_Zero/s03/results.csv
+reading (22): src-omit-good/testcases/CWE369_Divide_by_Zero/s01/results.csv
+reading (23): src-omit-good/testcases/CWE89_SQL_Injection/s02/results.csv
+reading (24): src-omit-good/testcases/CWE89_SQL_Injection/s01/results.csv
+reading (25): src-omit-good/testcases/CWE209_Information_Leak_Error/results.csv
+reading (26): src-omit-good/testcases/CWE549_Missing_Password_Masking/results.csv
+reading (27): src-omit-good/testcases/CWE440_Expected_Behavior_Violation/results.csv
+reading (28): src-omit-good/testcases/CWE510_Trapdoor/results.csv
+reading (29): src-omit-good/testcases/CWE539_Information_Exposure_Through_Persistent_Cookie/results.csv
+reading (30): src-omit-good/testcases/CWE674_Uncontrolled_Recursion/results.csv
+reading (31): src-omit-good/testcases/CWE535_Info_Exposure_Shell_Error/results.csv
+reading (32): src-omit-good/testcases/CWE390_Error_Without_Action/results.csv
+reading (33): src-omit-good/testcases/CWE605_Multiple_Binds_Same_Port/results.csv
+reading (34): src-omit-good/testcases/CWE476_NULL_Pointer_Dereference/results.csv
+reading (35): src-omit-good/testcases/CWE609_Double_Checked_Locking/results.csv
+reading (36): src-omit-good/testcases/CWE313_Cleartext_Storage_in_a_File_or_on_Disk/results.csv
+reading (37): src-omit-good/testcases/CWE570_Expression_Always_False/results.csv
+reading (38): src-omit-good/testcases/CWE615_Info_Exposure_by_Comment/results.csv
+reading (39): src-omit-good/testcases/CWE613_Insufficient_Session_Expiration/results.csv
+reading (40): src-omit-good/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/results.csv
+reading (41): src-omit-good/testcases/CWE571_Expression_Always_True/results.csv
+reading (42): src-omit-good/testcases/CWE470_Unsafe_Reflection/results.csv
+reading (43): src-omit-good/testcases/CWE321_Hard_Coded_Cryptographic_Key/results.csv
+reading (44): src-omit-good/testcases/CWE764_Multiple_Locks/results.csv
+reading (45): src-omit-good/testcases/CWE284_Improper_Access_Control/results.csv
+reading (46): src-omit-good/testcases/CWE478_Missing_Default_Case_in_Switch/results.csv
+reading (47): src-omit-good/testcases/CWE315_Cleartext_Storage_in_Cookie/results.csv
+reading (48): src-omit-good/testcases/CWE546_Suspicious_Comment/results.csv
+reading (49): src-omit-good/testcases/CWE396_Catch_Generic_Exception/results.csv
+reading (50): src-omit-good/testcases/CWE698_Execution_After_Redirect/results.csv
+reading (51): src-omit-good/testcases/CWE395_Catch_NullPointerException/results.csv
+reading (52): src-omit-good/testcases/CWE336_Same_Seed_in_PRNG/results.csv
+reading (53): src-omit-good/testcases/CWE598_Information_Exposure_QueryString/results.csv
+reading (54): src-omit-good/testcases/CWE582_Array_Public_Readonly_Static/results.csv
+reading (55): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s05/results.csv
+reading (56): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s02/results.csv
+reading (57): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s03/results.csv
+reading (58): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s04/results.csv
+reading (59): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s01/results.csv
+reading (60): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s06/results.csv
+reading (61): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s08/results.csv
+reading (62): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s09/results.csv
+reading (63): src-omit-good/testcases/CWE197_Numeric_Truncation_Error/s07/results.csv
+reading (64): src-omit-good/testcases/CWE482_Comparing_Instead_of_Assigning/results.csv
+reading (65): src-omit-good/testcases/CWE526_Info_Exposure_Environment_Variables/results.csv
+reading (66): src-omit-good/testcases/CWE511_Logic_Time_Bomb/results.csv
+reading (67): src-omit-good/testcases/CWE378_Temporary_File_Creation_With_Insecure_Perms/results.csv
+reading (68): src-omit-good/testcases/CWE314_Cleartext_Storage_in_the_Registry/results.csv
+reading (69): src-omit-good/testcases/CWE483_Incorrect_Block_Delimitation/results.csv
+reading (70): src-omit-good/testcases/CWE117_Improper_Output_Neutralization_for_Logs/results.csv
+reading (71): src-omit-good/testcases/CWE23_Relative_Path_Traversal/results.csv
+reading (72): src-omit-good/testcases/CWE94_Improper_Control_of_Generation_of_Code/results.csv
+reading (73): src-omit-good/testcases/CWE114_Process_Control/results.csv
+reading (74): src-omit-good/testcases/CWE261_Weak_Cryptography_for_Passwords/results.csv
+reading (75): src-omit-good/testcases/CWE256_Unprotected_Storage_of_Credentials/results.csv
+reading (76): src-omit-good/testcases/CWE129_Improper_Validation_of_Array_Index/s02/results.csv
+reading (77): src-omit-good/testcases/CWE129_Improper_Validation_of_Array_Index/s03/results.csv
+reading (78): src-omit-good/testcases/CWE129_Improper_Validation_of_Array_Index/s04/results.csv
+reading (79): src-omit-good/testcases/CWE129_Improper_Validation_of_Array_Index/s01/results.csv
+reading (80): src-omit-good/testcases/CWE113_HTTP_Response_Splitting/s02/results.csv
+reading (81): src-omit-good/testcases/CWE113_HTTP_Response_Splitting/s01/results.csv
+reading (82): src-omit-good/testcases/CWE328_Reversible_One_Way_Hash/results.csv
+reading (83): src-omit-good/testcases/CWE319_Cleartext_Tx_Sensitive_Info/results.csv
+reading (84): src-omit-good/testcases/CWE561_Dead_Code/results.csv
+reading (85): src-omit-good/testcases/CWE772_Missing_Release_of_Resource/results.csv
+reading (86): src-omit-good/testcases/CWE329_Not_Using_Random_IV_with_CBC_Mode/results.csv
+reading (87): src-omit-good/testcases/CWE675_Duplicate_Operations_on_Resource/results.csv
+reading (88): src-omit-good/testcases/CWE765_Multiple_Unlocks/results.csv
+reading (89): src-omit-good/testcases/CWE400_Uncontrolled_Resource_Consumption/s02/results.csv
+reading (90): src-omit-good/testcases/CWE400_Uncontrolled_Resource_Consumption/s03/results.csv
+reading (91): src-omit-good/testcases/CWE400_Uncontrolled_Resource_Consumption/s01/results.csv
+reading (92): src-omit-good/testcases/CWE523_Unprotected_Cred_Transport/results.csv
+reading (93): src-omit-good/testcases/CWE477_Obsolete_Functions/results.csv
+reading (94): src-omit-good/testcases/CWE252_Unchecked_Return_Value/results.csv
+reading (95): src-omit-good/testcases/CWE832_Unlock_Not_Locked/results.csv
+reading (96): src-omit-good/testcases/CWE690_NULL_Deref_From_Return/results.csv
+reading (97): src-omit-good/testcases/CWE397_Throw_Generic_Exception/results.csv
+reading (98): src-omit-good/testcases/CWE90_LDAP_Injection/results.csv
+reading (99): src-omit-good/testcases/CWE563_Assign_to_Variable_Without_Use/results.csv
+reading (100): src-omit-good/testcases/CWE327_Use_Broken_Crypto/results.csv
+reading (101): src-omit-good/testcases/CWE404_Improper_Resource_Shutdown/results.csv
+reading (102): src-omit-good/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/results.csv
+reading (103): src-omit-good/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/results.csv
+reading (104): src-omit-good/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/results.csv
+reading (105): src-omit-good/testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/results.csv
+reading (106): src-omit-good/testcases/CWE248_Uncaught_Exception/results.csv
+reading (107): src-omit-good/testcases/CWE253_Incorrect_Check_of_Function_Return_Value/results.csv
+reading (108): src-omit-good/testcases/CWE681_Incorrect_Conversion_Between_Numeric_Types/results.csv
+reading (109): src-omit-good/testcases/CWE614_Sensitive_Cookie_Without_Secure/results.csv
+reading (110): src-omit-good/testcases/CWE759_Unsalted_One_Way_Hash/results.csv
+reading (111): src-omit-good/testcases/CWE486_Compare_Classes_by_Name/results.csv
+reading (112): src-omit-good/testcases/CWE835_Infinite_Loop/results.csv
+reading (113): src-omit-good/testcases/CWE36_Absolute_Path_Traversal/results.csv
+reading (114): src-omit-good/testcases/CWE606_Unchecked_Loop_Condition/results.csv
+reading (115): src-omit-good/testcases/CWE532_Inclusion_of_Sensitive_Info_in_Log/results.csv
+reading (116): src-omit-good/testcases/CWE350_Reliance_on_Reverse_DNS_Resolution_for_Security_Action/results.csv
+reading (117): src-omit-good/testcases/CWE80_XSS/s02/results.csv
+reading (118): src-omit-good/testcases/CWE80_XSS/s01/results.csv
+reading (119): src-omit-good/testcases/CWE193_Off_by_One_Error/results.csv
+reading (120): src-omit-good/testcases/CWE191_Integer_Underflow/s05/results.csv
+reading (121): src-omit-good/testcases/CWE191_Integer_Underflow/s02/results.csv
+reading (122): src-omit-good/testcases/CWE191_Integer_Underflow/s03/results.csv
+reading (123): src-omit-good/testcases/CWE191_Integer_Underflow/s04/results.csv
+reading (124): src-omit-good/testcases/CWE191_Integer_Underflow/s01/results.csv
+reading (125): src-omit-good/testcases/CWE481_Assigning_Instead_of_Comparing/results.csv
+reading (126): src-omit-good/testcases/CWE325_Missing_Required_Cryptographic_Step/results.csv
+reading (127): src-omit-good/testcases/CWE760_Predictable_Salt_One_Way_Hash/results.csv
+reading (128): src-omit-good/testcases/CWE601_Open_Redirect/results.csv
+reading (129): src-omit-good/testcases/CWE566_Authorization_Bypass_Through_SQL_Primary/results.csv
+reading (130): src-omit-good/testcases/CWE617_Reachable_Assertion/results.csv
+{'covered_counts': {'omit_bad_files': {'all': 42640,
+                                       'covered_with_anything': 18320,
+                                       'covered_with_error': 1614},
+                    'omit_good_files': {'all': 0,
+                                        'covered_with_anything': 0,
+                                        'covered_with_error': 0}},
+ 'file_count': <built-in function all>,
+ 'found': {'error': Counter({'Container contents are never accessed': 1350,
+                             'Dereferenced variable is always null': 462,
+                             'SQL query built from user-controlled sources': 315,
+                             'Cross-site scripting': 210,
+                             'Resource injection': 106,
+                             'Stored cross-site scripting': 105,
+                             'SQL query built from stored user-controlled sources': 105,
+                             'Hard-coded credentials': 90,
+                             'Log entries created from user input': 70,
+                             'LDAP query built from user-controlled sources': 70,
+                             'URL redirection from remote source': 70,
+                             'Hard-coded connection string with credentials': 55,
+                             'Insecure SQL connection': 36,
+                             'LDAP query built from stored user-controlled sources': 35,
+                             'Off-by-one comparison against container length': 34,
+                             'Self-assignment': 17,
+                             'Information exposure through an exception': 17,
+                             'Equals on incomparable types': 17,
+                             'Potentially dangerous use of non-short-circuit logic': 17,
+                             'Inconsistent lock sequence': 1,
+                             'Double-checked lock is not thread-safe': 1}),
+           'recommendation': Counter({'Compilation message': 8147,
+                                      "Missed 'readonly' opportunity": 6107,
+                                      'Missed ternary opportunity': 2970,
+                                      "Nested 'if' statements can be combined": 2273,
+                                      'Static field written by instance method': 1928,
+                                      'Redundant ToString() call': 951,
+                                      'Generic catch clause': 631,
+                                      "Missed 'using' opportunity": 333,
+                                      'StringBuilder creation in loop': 25,
+                                      'Unnecessarily complex Boolean expression': 19}),
+           'warning': Counter({'Constant condition': 5433,
+                               'Cast to same type': 3993,
+                               'Useless assignment to local variable': 3377,
+                               'Missing Dispose call on local IDisposable': 984,
+                               'Dereferenced variable may be null': 788,
+                               'Use of default ToString()': 552,
+                               'Useless upcast': 231,
+                               'Futile conditional': 130,
+                               'Empty branch of conditional, or empty loop body': 51,
+                               'Weak encryption': 34,
+                               'Rethrowing exception variable': 21,
+                               'Cookie security: persistent cookie': 17,
+                               'Poor error handling: catch of NullReferenceException': 17,
+                               'Call to obsolete method': 17,
+                               'Misleading indentation': 1,
+                               'Dispose may not be called if an exception is thrown during execution': 1})},
+ 'path': 'src-omit-good'}
+reading (0): src-omit-bad/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/results.csv
+reading (1): src-omit-bad/testcases/CWE338_Weak_PRNG/results.csv
+reading (2): src-omit-bad/testcases/CWE833_Deadlock/results.csv
+reading (3): src-omit-bad/testcases/CWE83_XSS_Attribute/results.csv
+reading (4): src-omit-bad/testcases/CWE190_Integer_Overflow/s05/results.csv
+reading (5): src-omit-bad/testcases/CWE190_Integer_Overflow/s02/results.csv
+reading (6): src-omit-bad/testcases/CWE190_Integer_Overflow/s03/results.csv
+reading (7): src-omit-bad/testcases/CWE190_Integer_Overflow/s04/results.csv
+reading (8): src-omit-bad/testcases/CWE190_Integer_Overflow/s01/results.csv
+reading (9): src-omit-bad/testcases/CWE190_Integer_Overflow/s06/results.csv
+reading (10): src-omit-bad/testcases/CWE190_Integer_Overflow/s07/results.csv
+reading (11): src-omit-bad/testcases/CWE134_Externally_Controlled_Format_String/results.csv
+reading (12): src-omit-bad/testcases/CWE398_Code_Quality/results.csv
+reading (13): src-omit-bad/testcases/CWE506_Embedded_Malicious_Code/results.csv
+reading (14): src-omit-bad/testcases/CWE81_XSS_Error_Message/results.csv
+reading (15): src-omit-bad/testcases/CWE366_Race_Condition_within_a_Thread/results.csv
+reading (16): src-omit-bad/testcases/CWE667_Improper_Locking/results.csv
+reading (17): src-omit-bad/testcases/CWE379_Temporary_File_Creation_in_Insecure_Dir/results.csv
+reading (18): src-omit-bad/testcases/CWE459_Incomplete_Cleanup/results.csv
+reading (19): src-omit-bad/testcases/CWE259_Hard_Coded_Password/results.csv
+reading (20): src-omit-bad/testcases/CWE369_Divide_by_Zero/s02/results.csv
+reading (21): src-omit-bad/testcases/CWE369_Divide_by_Zero/s03/results.csv
+reading (22): src-omit-bad/testcases/CWE369_Divide_by_Zero/s01/results.csv
+reading (23): src-omit-bad/testcases/CWE89_SQL_Injection/s02/results.csv
+reading (24): src-omit-bad/testcases/CWE209_Information_Leak_Error/results.csv
+reading (25): src-omit-bad/testcases/CWE549_Missing_Password_Masking/results.csv
+reading (26): src-omit-bad/testcases/CWE440_Expected_Behavior_Violation/results.csv
+reading (27): src-omit-bad/testcases/CWE510_Trapdoor/results.csv
+reading (28): src-omit-bad/testcases/CWE539_Information_Exposure_Through_Persistent_Cookie/results.csv
+reading (29): src-omit-bad/testcases/CWE674_Uncontrolled_Recursion/results.csv
+reading (30): src-omit-bad/testcases/CWE535_Info_Exposure_Shell_Error/results.csv
+reading (31): src-omit-bad/testcases/CWE390_Error_Without_Action/results.csv
+reading (32): src-omit-bad/testcases/CWE605_Multiple_Binds_Same_Port/results.csv
+reading (33): src-omit-bad/testcases/CWE476_NULL_Pointer_Dereference/results.csv
+reading (34): src-omit-bad/testcases/CWE609_Double_Checked_Locking/results.csv
+reading (35): src-omit-bad/testcases/CWE313_Cleartext_Storage_in_a_File_or_on_Disk/results.csv
+reading (36): src-omit-bad/testcases/CWE570_Expression_Always_False/results.csv
+reading (37): src-omit-bad/testcases/CWE615_Info_Exposure_by_Comment/results.csv
+reading (38): src-omit-bad/testcases/CWE613_Insufficient_Session_Expiration/results.csv
+reading (39): src-omit-bad/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/results.csv
+reading (40): src-omit-bad/testcases/CWE571_Expression_Always_True/results.csv
+reading (41): src-omit-bad/testcases/CWE470_Unsafe_Reflection/results.csv
+reading (42): src-omit-bad/testcases/CWE321_Hard_Coded_Cryptographic_Key/results.csv
+reading (43): src-omit-bad/testcases/CWE764_Multiple_Locks/results.csv
+reading (44): src-omit-bad/testcases/CWE284_Improper_Access_Control/results.csv
+reading (45): src-omit-bad/testcases/CWE478_Missing_Default_Case_in_Switch/results.csv
+reading (46): src-omit-bad/testcases/CWE315_Cleartext_Storage_in_Cookie/results.csv
+reading (47): src-omit-bad/testcases/CWE546_Suspicious_Comment/results.csv
+reading (48): src-omit-bad/testcases/CWE396_Catch_Generic_Exception/results.csv
+reading (49): src-omit-bad/testcases/CWE698_Execution_After_Redirect/results.csv
+reading (50): src-omit-bad/testcases/CWE395_Catch_NullPointerException/results.csv
+reading (51): src-omit-bad/testcases/CWE336_Same_Seed_in_PRNG/results.csv
+reading (52): src-omit-bad/testcases/CWE598_Information_Exposure_QueryString/results.csv
+reading (53): src-omit-bad/testcases/CWE582_Array_Public_Readonly_Static/results.csv
+reading (54): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s05/results.csv
+reading (55): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s02/results.csv
+reading (56): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s03/results.csv
+reading (57): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s04/results.csv
+reading (58): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s01/results.csv
+reading (59): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s06/results.csv
+reading (60): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s08/results.csv
+reading (61): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s09/results.csv
+reading (62): src-omit-bad/testcases/CWE197_Numeric_Truncation_Error/s07/results.csv
+reading (63): src-omit-bad/testcases/CWE482_Comparing_Instead_of_Assigning/results.csv
+reading (64): src-omit-bad/testcases/CWE526_Info_Exposure_Environment_Variables/results.csv
+reading (65): src-omit-bad/testcases/CWE511_Logic_Time_Bomb/results.csv
+reading (66): src-omit-bad/testcases/CWE378_Temporary_File_Creation_With_Insecure_Perms/results.csv
+reading (67): src-omit-bad/testcases/CWE314_Cleartext_Storage_in_the_Registry/results.csv
+reading (68): src-omit-bad/testcases/CWE483_Incorrect_Block_Delimitation/results.csv
+reading (69): src-omit-bad/testcases/CWE117_Improper_Output_Neutralization_for_Logs/results.csv
+reading (70): src-omit-bad/testcases/CWE23_Relative_Path_Traversal/results.csv
+reading (71): src-omit-bad/testcases/CWE94_Improper_Control_of_Generation_of_Code/results.csv
+reading (72): src-omit-bad/testcases/CWE114_Process_Control/results.csv
+reading (73): src-omit-bad/testcases/CWE261_Weak_Cryptography_for_Passwords/results.csv
+reading (74): src-omit-bad/testcases/CWE256_Unprotected_Storage_of_Credentials/results.csv
+reading (75): src-omit-bad/testcases/CWE129_Improper_Validation_of_Array_Index/s02/results.csv
+reading (76): src-omit-bad/testcases/CWE129_Improper_Validation_of_Array_Index/s03/results.csv
+reading (77): src-omit-bad/testcases/CWE129_Improper_Validation_of_Array_Index/s04/results.csv
+reading (78): src-omit-bad/testcases/CWE129_Improper_Validation_of_Array_Index/s01/results.csv
+reading (79): src-omit-bad/testcases/CWE113_HTTP_Response_Splitting/s02/results.csv
+reading (80): src-omit-bad/testcases/CWE113_HTTP_Response_Splitting/s01/results.csv
+reading (81): src-omit-bad/testcases/CWE328_Reversible_One_Way_Hash/results.csv
+reading (82): src-omit-bad/testcases/CWE319_Cleartext_Tx_Sensitive_Info/results.csv
+reading (83): src-omit-bad/testcases/CWE561_Dead_Code/results.csv
+reading (84): src-omit-bad/testcases/CWE772_Missing_Release_of_Resource/results.csv
+reading (85): src-omit-bad/testcases/CWE329_Not_Using_Random_IV_with_CBC_Mode/results.csv
+reading (86): src-omit-bad/testcases/CWE675_Duplicate_Operations_on_Resource/results.csv
+reading (87): src-omit-bad/testcases/CWE765_Multiple_Unlocks/results.csv
+reading (88): src-omit-bad/testcases/CWE400_Uncontrolled_Resource_Consumption/s02/results.csv
+reading (89): src-omit-bad/testcases/CWE400_Uncontrolled_Resource_Consumption/s03/results.csv
+reading (90): src-omit-bad/testcases/CWE400_Uncontrolled_Resource_Consumption/s01/results.csv
+reading (91): src-omit-bad/testcases/CWE523_Unprotected_Cred_Transport/results.csv
+reading (92): src-omit-bad/testcases/CWE477_Obsolete_Functions/results.csv
+reading (93): src-omit-bad/testcases/CWE252_Unchecked_Return_Value/results.csv
+reading (94): src-omit-bad/testcases/CWE832_Unlock_Not_Locked/results.csv
+reading (95): src-omit-bad/testcases/CWE690_NULL_Deref_From_Return/results.csv
+reading (96): src-omit-bad/testcases/CWE397_Throw_Generic_Exception/results.csv
+reading (97): src-omit-bad/testcases/CWE90_LDAP_Injection/results.csv
+reading (98): src-omit-bad/testcases/CWE563_Assign_to_Variable_Without_Use/results.csv
+reading (99): src-omit-bad/testcases/CWE327_Use_Broken_Crypto/results.csv
+reading (100): src-omit-bad/testcases/CWE404_Improper_Resource_Shutdown/results.csv
+reading (101): src-omit-bad/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/results.csv
+reading (102): src-omit-bad/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/results.csv
+reading (103): src-omit-bad/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/results.csv
+reading (104): src-omit-bad/testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/results.csv
+reading (105): src-omit-bad/testcases/CWE248_Uncaught_Exception/results.csv
+reading (106): src-omit-bad/testcases/CWE253_Incorrect_Check_of_Function_Return_Value/results.csv
+reading (107): src-omit-bad/testcases/CWE681_Incorrect_Conversion_Between_Numeric_Types/results.csv
+reading (108): src-omit-bad/testcases/CWE614_Sensitive_Cookie_Without_Secure/results.csv
+reading (109): src-omit-bad/testcases/CWE759_Unsalted_One_Way_Hash/results.csv
+reading (110): src-omit-bad/testcases/CWE486_Compare_Classes_by_Name/results.csv
+reading (111): src-omit-bad/testcases/CWE835_Infinite_Loop/results.csv
+reading (112): src-omit-bad/testcases/CWE36_Absolute_Path_Traversal/results.csv
+reading (113): src-omit-bad/testcases/CWE606_Unchecked_Loop_Condition/results.csv
+reading (114): src-omit-bad/testcases/CWE532_Inclusion_of_Sensitive_Info_in_Log/results.csv
+reading (115): src-omit-bad/testcases/CWE350_Reliance_on_Reverse_DNS_Resolution_for_Security_Action/results.csv
+reading (116): src-omit-bad/testcases/CWE80_XSS/s02/results.csv
+reading (117): src-omit-bad/testcases/CWE80_XSS/s01/results.csv
+reading (118): src-omit-bad/testcases/CWE193_Off_by_One_Error/results.csv
+reading (119): src-omit-bad/testcases/CWE191_Integer_Underflow/s05/results.csv
+reading (120): src-omit-bad/testcases/CWE191_Integer_Underflow/s02/results.csv
+reading (121): src-omit-bad/testcases/CWE191_Integer_Underflow/s03/results.csv
+reading (122): src-omit-bad/testcases/CWE191_Integer_Underflow/s04/results.csv
+reading (123): src-omit-bad/testcases/CWE191_Integer_Underflow/s01/results.csv
+reading (124): src-omit-bad/testcases/CWE481_Assigning_Instead_of_Comparing/results.csv
+reading (125): src-omit-bad/testcases/CWE325_Missing_Required_Cryptographic_Step/results.csv
+reading (126): src-omit-bad/testcases/CWE760_Predictable_Salt_One_Way_Hash/results.csv
+reading (127): src-omit-bad/testcases/CWE601_Open_Redirect/results.csv
+reading (128): src-omit-bad/testcases/CWE566_Authorization_Bypass_Through_SQL_Primary/results.csv
+reading (129): src-omit-bad/testcases/CWE617_Reachable_Assertion/results.csv
+{'covered_counts': {'omit_bad_files': {'all': 0,
+                                       'covered_with_anything': 0,
+                                       'covered_with_error': 0},
+                    'omit_good_files': {'all': 42982,
+                                        'covered_with_anything': 18307,
+                                        'covered_with_error': 294}},
+ 'file_count': <built-in function all>,
+ 'found': {'error': Counter({'Container contents are never accessed': 1903,
+                             'Dereferenced variable is always null': 153,
+                             'Hard-coded connection string with credentials': 146,
+                             'Hard-coded credentials': 83,
+                             'Insecure SQL connection': 62,
+                             'Resource injection': 50,
+                             'SQL query built from user-controlled sources': 6,
+                             'Log entries created from user input': 2}),
+           'recommendation': Counter({'Missed ternary opportunity': 22158,
+                                      'Compilation message': 16586,
+                                      "Nested 'if' statements can be combined": 5621,
+                                      "Missed 'readonly' opportunity": 3745,
+                                      'Redundant ToString() call': 2642,
+                                      'Static field written by instance method': 1801,
+                                      'Generic catch clause': 161,
+                                      "Missed 'using' opportunity": 155,
+                                      'Unnecessarily complex Boolean expression': 62,
+                                      'StringBuilder creation in loop': 29}),
+           'warning': Counter({'Constant condition': 17680,
+                               'Cast to same type': 11079,
+                               'Useless assignment to local variable': 5545,
+                               'Dereferenced variable may be null': 2106,
+                               'Use of default ToString()': 1509,
+                               'Useless upcast': 332,
+                               'Rethrowing exception variable': 94,
+                               'Futile conditional': 28})},
+ 'path': 'src-omit-bad'}
+42640 real positives, 42982 real negatives
+With errors: 0.85 precision, 0.04 recall, 0.07 F1
+With anything: 0.50 precision, 0.43 recall, 0.46 F1
