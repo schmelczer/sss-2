@@ -52,6 +52,9 @@ Since GitHub acquiring LGTM, a streamlined integration is available to create a 
 
 ### SNYK
 
+Snyk is available as a CLI. This CLI will be used here as well
+https://docs.snyk.io/products/snyk-code/cli-for-snyk-code
+
 ## Results
 
 ### With only errors included
