@@ -79,10 +79,12 @@ def get_covered_file_counts(root: Path, results: List[Tuple[str, str, str, str]]
 
 
 def precision(tp, fp):
+    logging.info(f"\n\nPrecision = {tp} / ({tp} + {fp})\n\n")
     return tp / (tp + fp)
 
 
 def recall(tp, fn):
+    logging.info(f"\n\nRecall = {tp} / ({tp} + {fn})\n\n")
     return tp / (tp + fn)
 
 

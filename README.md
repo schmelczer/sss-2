@@ -61,14 +61,14 @@ https://docs.snyk.io/products/snyk-code/cli-for-snyk-code
 
 |                         | CodeQL | SonarQube | SNYK |
 | :---------------------- | -----: | --------: | ---: |
-| Precision (with errors) |   0.85 |           |      |
-| Recall (with errors)    |   0.04 |           |      |
-| F1 (with errors)        |   0.07 |           |      |
+| Precision (with errors) |   0.85 |           | 0.69 |
+| Recall (with errors)    |   0.04 |           | 0.02 |
+| F1 (with errors)        |   0.07 |           | 0.04 |
 
 ### With every finding included
 
 |                           | CodeQL | SonarQube | SNYK |
 | :------------------------ | -----: | --------: | ---: |
-| Precision (with warnings) |   0.51 |           |      |
-| Recall (with warnings)    |   0.43 |           |      |
-| F1 (with warnings)        |   0.46 |           |      |
+| Precision (with warnings) |   0.51 |           | 0.77 |
+| Recall (with warnings)    |   0.43 |           | 0.03 |
+| F1 (with warnings)        |   0.46 |           | 0.04 |
