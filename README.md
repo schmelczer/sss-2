@@ -50,6 +50,13 @@ Since GitHub acquiring LGTM, a streamlined integration is available to create a 
 
 ### SonarQube
 
+Available for local integration at https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
+
+Generating results:
+1. `cd Juliet_Test_Suite_v1.3_for_C#`
+2. `python3 run_analysis_sonarqube.py`
+
+
 ### SNYK
 
 Snyk is available as a CLI. This CLI will be used here as well
@@ -61,14 +68,14 @@ https://docs.snyk.io/products/snyk-code/cli-for-snyk-code
 
 |                         | CodeQL | SonarQube | SNYK |
 | :---------------------- | -----: | --------: | ---: |
-| Precision (with errors) |   0.85 |           | 0.69 |
-| Recall (with errors)    |   0.04 |           | 0.02 |
-| F1 (with errors)        |   0.07 |           | 0.04 |
+| Precision (with errors) |   0.85 |      0.75 | 0.69 |
+| Recall (with errors)    |   0.04 |      0.03 | 0.02 |
+| F1 (with errors)        |   0.07 |      0.08 | 0.04 |
 
 ### With every finding included
 
 |                           | CodeQL | SonarQube | SNYK |
 | :------------------------ | -----: | --------: | ---: |
-| Precision (with warnings) |   0.51 |           | 0.77 |
-| Recall (with warnings)    |   0.43 |           | 0.03 |
-| F1 (with warnings)        |   0.46 |           | 0.04 |
+| Precision (with warnings) |   0.51 |      0.63 | 0.77 |
+| Recall (with warnings)    |   0.43 |      0.40 | 0.03 |
+| F1 (with warnings)        |   0.46 |      0.49 | 0.04 |
