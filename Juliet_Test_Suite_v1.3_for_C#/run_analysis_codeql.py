@@ -21,7 +21,8 @@ codeql_path = '/Users/andras/Desktop/Projects/sss-2/codeql/codeql'
 def run_example_tool(bat_file):
 	py_common.run_commands([
 		'pwd',
-		f'{codeql_path} database create codeql.db --language=csharp',
+		'rm -rf codeql.db',
+		f'{codeql_path} database create codeql.db --language=csharp --overwrite',
 		f'{codeql_path} database analyze codeql.db csharp-lgtm-full.qls --format=csv --output=results.csv --threads=0',
 		'rm -rf codeql.db'
 	], use_shell=True)

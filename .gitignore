@@ -1,3 +1,6 @@
 *.pyc
 codeql
 */.ipynb_checkpoints
+bin
+obj
+codeql.db
